@@ -3,88 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My CV</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <title>Jose Manuel Lopez del Rio - CV</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-        }
-        .container {
-            max-width: 80%;
-            margin: 40px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #333;
-        }
-        .pdf-container {
+            background-color: #f4f4f4;
             display: flex;
             justify-content: center;
             align-items: center;
+            height: 100vh;
+        }
+        .cv-container {
+            width: 80%;
+            height: 90vh;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
             overflow: hidden;
-            border-radius: 10px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
         }
-        canvas {
+        iframe {
             width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-        .btn {
-            background: #007bff;
-            color: white;
-            padding: 12px 18px;
+            height: 100%;
             border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-            font-size: 16px;
-            display: inline-block;
-            margin-top: 20px;
-        }
-        .btn:hover {
-            background: #0056b3;
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>Jose Manuel Lopez del Rio</h1>
-        <a href="CV-JoseManuelLopezDelRio.pdf" target="_blank" class="btn">Download CV (PDF)</a>
-        <div class="pdf-container">
-            <canvas id="pdf-viewer"></canvas>
-        </div>
+    <div class="cv-container">
+        <iframe src="CV-JoseManuelLopezDelRio.pdf"></iframe>
     </div>
-
-    <script>
-        var url = 'CV-JoseManuelLopezDelRio.pdf';
-
-        pdfjsLib.getDocument(url).promise.then(function(pdf) {
-            pdf.getPage(1).then(function(page) {
-                var scale = 1.5;
-                var viewport = page.getViewport({ scale: scale });
-
-                var canvas = document.getElementById('pdf-viewer');
-                var context = canvas.getContext('2d');
-                canvas.height = viewport.height;
-                canvas.width = viewport.width;
-
-                var renderContext = {
-                    canvasContext: context,
-                    viewport: viewport
-                };
-                page.render(renderContext);
-            });
-        });
-    </script>
 
 </body>
 </html>
