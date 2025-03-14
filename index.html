@@ -16,6 +16,7 @@
         h1 {
             color: #2c3e50; /* Dark blue for the name */
             margin-bottom: 10px;
+            font-size: 2.5em; /* Larger font size for the name */
         }
         h2 {
             color: #3498db; /* Blue for section titles */
@@ -40,10 +41,21 @@
         .header-info {
             flex-grow: 1;
         }
-        .header-info p {
+        .header-info h1 {
             margin: 0;
-            text-align: right;
+            color: #2c3e50; /* Dark blue for the name */
+        }
+        .header-info p {
+            margin: 5px 0 0 0;
             color: #7f8c8d; /* Gray for email and LinkedIn */
+            text-align: left;
+        }
+        .header-info a {
+            color: #3498db; /* Blue for links */
+            text-decoration: none;
+        }
+        .header-info a:hover {
+            text-decoration: underline;
         }
         .section {
             margin-bottom: 30px;
