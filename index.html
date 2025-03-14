@@ -8,13 +8,16 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 20px;
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 20px;
+            text-align: left;
         }
         h1, h2, h3 {
             color: #333;
         }
         .section {
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
         .section h2 {
             border-bottom: 2px solid #333;
@@ -34,10 +37,29 @@
         }
         .certification {
             margin-bottom: 10px;
+            display: flex;
+            align-items: center;
         }
         .certification img {
-            vertical-align: middle;
             margin-right: 10px;
+        }
+        .experience, .education {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        .experience img, .education img {
+            margin-right: 20px;
+            width: 100px;
+        }
+        .languages {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .languages img {
+            margin-right: 10px;
+            width: 30px;
         }
     </style>
 </head>
@@ -51,25 +73,41 @@
     <section class="section">
         <h2>Work Experience</h2>
         
-        <h3>Zurich Insurance - Senior Cloud DevOps/Platform Engineer</h3>
-        <p><strong>May 2023 - Present</strong></p>
-        <p>Member of the main Platform team of Zurich, responsible for the whole infrastructure in Azure. From maintenance and observability to design and architect new features and automation for the Azure Landing Zone. We work alongside the wide variety of projects and developers to make sure their work is as efficient and reliable as possible.</p>
-        <img src="assets/Zurich.png" alt="Zurich Insurance Logo" width="100">
+        <div class="experience">
+            <img src="assets/Zurich.png" alt="Zurich Insurance Logo">
+            <div>
+                <h3>Zurich Insurance - Senior Cloud DevOps/Platform Engineer</h3>
+                <p><strong>May 2023 - Present</strong></p>
+                <p>Member of the main Platform team of Zurich, responsible for the whole infrastructure in Azure. From maintenance and observability to design and architect new features and automation for the Azure Landing Zone. We work alongside the wide variety of projects and developers to make sure their work is as efficient and reliable as possible.</p>
+            </div>
+        </div>
 
-        <h3>UST - DevOps and Infrastructure Specialist</h3>
-        <p><strong>April 2021 - May 2023</strong></p>
-        <p>Member of the UST tech leads team working for one of the biggest retail projects in the world. In charge of providing and using CI/CD tools to integrate and automate the deployment, maintenance, and update of software, hosted mostly as microservices in Kubernetes clusters. Designing, architecting, and implementing new software solutions, making sure they are reliable and properly monitored.</p>
-        <img src="assets/UST.png" alt="UST Logo" width="100">
+        <div class="experience">
+            <img src="assets/UST.png" alt="UST Logo">
+            <div>
+                <h3>UST - DevOps and Infrastructure Specialist</h3>
+                <p><strong>April 2021 - May 2023</strong></p>
+                <p>Member of the UST tech leads team working for one of the biggest retail projects in the world. In charge of providing and using CI/CD tools to integrate and automate the deployment, maintenance, and update of software, hosted mostly as microservices in Kubernetes clusters. Designing, architecting, and implementing new software solutions, making sure they are reliable and properly monitored.</p>
+            </div>
+        </div>
 
-        <h3>Unit4 - Cloud Engineer</h3>
-        <p><strong>October 2020 - April 2021</strong></p>
-        <p>Member of the Unit4 Cloud team. In charge of deploying and administrating Azure servers, SQL database and application management, application deployments/upgrades, troubleshooting, and performance monitoring.</p>
-        <img src="assets/Unit4.PNG" alt="Unit4 Logo" width="100">
+        <div class="experience">
+            <img src="assets/Unit4.PNG" alt="Unit4 Logo">
+            <div>
+                <h3>Unit4 - Cloud Engineer</h3>
+                <p><strong>October 2020 - April 2021</strong></p>
+                <p>Member of the Unit4 Cloud team. In charge of deploying and administrating Azure servers, SQL database and application management, application deployments/upgrades, troubleshooting, and performance monitoring.</p>
+            </div>
+        </div>
 
-        <h3>Wazuh - IT Security Engineer</h3>
-        <p><strong>June 2019 - October 2020</strong></p>
-        <p>In charge of tools deployments, environment health checks, integrations, and architecture designs. Managing several tools in Linux servers like the Elasticsearch database and Kibana interface, the SIEM software that Wazuh provided, as well as Cloud solutions integrations such as AWS or Azure.</p>
-        <img src="assets/wazuh.png" alt="Wazuh Logo" width="100">
+        <div class="experience">
+            <img src="assets/wazuh.png" alt="Wazuh Logo">
+            <div>
+                <h3>Wazuh - IT Security Engineer</h3>
+                <p><strong>June 2019 - October 2020</strong></p>
+                <p>In charge of tools deployments, environment health checks, integrations, and architecture designs. Managing several tools in Linux servers like the Elasticsearch database and Kibana interface, the SIEM software that Wazuh provided, as well as Cloud solutions integrations such as AWS or Azure.</p>
+            </div>
+        </div>
     </section>
 
     <section class="section">
@@ -77,31 +115,51 @@
         
         <div class="certification">
             <img src="assets/azure-devops-expert.png" alt="Microsoft Certified: DevOps Engineer Expert" width="50">
-            <strong>Microsoft Certified: DevOps Engineer Expert</strong> - July 2022
+            <div>
+                <strong>Microsoft Certified: DevOps Engineer Expert</strong> - July 2022
+                <br>
+                <a href="#" target="_blank">View certificate</a>
+            </div>
         </div>
         
         <div class="certification">
             <img src="assets/azure-administrator.png" alt="Microsoft Certified: Azure Administrator Associate" width="50">
-            <strong>Microsoft Certified: Azure Administrator Associate</strong> - June 2022
+            <div>
+                <strong>Microsoft Certified: Azure Administrator Associate</strong> - June 2022
+                <br>
+                <a href="#" target="_blank">View certificate</a>
+            </div>
         </div>
         
         <div class="certification">
             <img src="assets/azure-fundamentals.png" alt="Microsoft Certified: Azure Fundamentals" width="50">
-            <strong>Microsoft Certified: Azure Fundamentals</strong> - February 2021
+            <div>
+                <strong>Microsoft Certified: Azure Fundamentals</strong> - February 2021
+                <br>
+                <a href="#" target="_blank">View certificate</a>
+            </div>
         </div>
     </section>
 
     <section class="section">
         <h2>Education</h2>
         
-        <h3>Bachelor's Degree in Telecommunication Engineering</h3>
-        <p><strong>University of Granada, ETSIIT</strong> - July 2020</p>
-        <img src="assets/University.png" alt="University of Granada Logo" width="100">
+        <div class="education">
+            <img src="assets/University.png" alt="University of Granada Logo">
+            <div>
+                <h3>Bachelor's Degree in Telecommunication Engineering</h3>
+                <p><strong>University of Granada, ETSIIT</strong> - July 2020</p>
+            </div>
+        </div>
 
-        <h3>Edge Computing Bachelor's Degree Final Project</h3>
-        <p><strong>University of Granada, ETSIIT</strong></p>
-        <p>Maximum rating in degree's final project related to an Edge computing new design: Architecture and Edge computing logic.</p>
-        <img src="assets/edge-computing.png" alt="Edge Computing Project" width="100">
+        <div class="education">
+            <img src="assets/edge-computing.png" alt="Edge Computing Project">
+            <div>
+                <h3>Edge Computing Bachelor's Degree Final Project</h3>
+                <p><strong>University of Granada, ETSIIT</strong></p>
+                <p>Maximum rating in degree's final project related to an Edge computing new design: Architecture and Edge computing logic.</p>
+            </div>
+        </div>
     </section>
 
     <section class="section">
@@ -133,8 +191,14 @@
 
     <section class="section">
         <h2>Languages</h2>
-        <p>Professional user</p>
-        <p>Native speaker</p>
+        <div class="languages">
+            <img src="assets/gb.png" alt="English">
+            <p>Professional user</p>
+        </div>
+        <div class="languages">
+            <img src="assets/es.png" alt="Spanish">
+            <p>Native speaker</p>
+        </div>
     </section>
 
     <section class="section">
