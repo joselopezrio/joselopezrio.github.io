@@ -4,81 +4,140 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jose Manuel Lopez del Rio - CV</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        .skills-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills-list li {
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            padding: 5px 10px;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+        }
+        .certification {
+            margin-bottom: 10px;
+        }
+        .certification img {
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Jose Manuel Lopez del Rio</h1>
-        <p>Email: josemanuelori@gmail.com</p>
-        <p><a href="https://www.linkedin.com/in/jose-manuel-lopez-del-rio-87059819b/">LinkedIn Profile</a></p>
+        <p>Email: <a href="mailto:josemanuelori@gmail.com">josemanuelori@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/josemanuellopezdelrio">View profile</a></p>
     </header>
 
-    <section>
+    <section class="section">
         <h2>Work Experience</h2>
-        <ul>
-            <li><img src="assets/Zurich.png" alt="Zurich Insurance"> <strong>Zurich Insurance</strong> - Senior Cloud DevOps/Platform Engineer (May 2023 - Present)</li>
-            <li><img src="assets/UST.png" alt="UST"> <strong>UST</strong> - DevOps and Infrastructure Specialist (April 2021 - May 2023)</li>
-            <li><img src="assets/Unit4.PNG" alt="Unit4"> <strong>Unit4</strong> - Cloud Engineer (October 2020 - April 2021)</li>
-            <li><img src="assets/wazuh.png" alt="Wazuh"> <strong>Wazuh</strong> - IT Security Engineer (June 2019 - October 2020)</li>
-        </ul>
+        
+        <h3>Zurich Insurance - Senior Cloud DevOps/Platform Engineer</h3>
+        <p><strong>May 2023 - Present</strong></p>
+        <p>Member of the main Platform team of Zurich, responsible for the whole infrastructure in Azure. From maintenance and observability to design and architect new features and automation for the Azure Landing Zone. We work alongside the wide variety of projects and developers to make sure their work is as efficient and reliable as possible.</p>
+        <img src="assets/Zurich.png" alt="Zurich Insurance Logo" width="100">
+
+        <h3>UST - DevOps and Infrastructure Specialist</h3>
+        <p><strong>April 2021 - May 2023</strong></p>
+        <p>Member of the UST tech leads team working for one of the biggest retail projects in the world. In charge of providing and using CI/CD tools to integrate and automate the deployment, maintenance, and update of software, hosted mostly as microservices in Kubernetes clusters. Designing, architecting, and implementing new software solutions, making sure they are reliable and properly monitored.</p>
+        <img src="assets/UST.png" alt="UST Logo" width="100">
+
+        <h3>Unit4 - Cloud Engineer</h3>
+        <p><strong>October 2020 - April 2021</strong></p>
+        <p>Member of the Unit4 Cloud team. In charge of deploying and administrating Azure servers, SQL database and application management, application deployments/upgrades, troubleshooting, and performance monitoring.</p>
+        <img src="assets/Unit4.PNG" alt="Unit4 Logo" width="100">
+
+        <h3>Wazuh - IT Security Engineer</h3>
+        <p><strong>June 2019 - October 2020</strong></p>
+        <p>In charge of tools deployments, environment health checks, integrations, and architecture designs. Managing several tools in Linux servers like the Elasticsearch database and Kibana interface, the SIEM software that Wazuh provided, as well as Cloud solutions integrations such as AWS or Azure.</p>
+        <img src="assets/wazuh.png" alt="Wazuh Logo" width="100">
     </section>
 
-    <section>
+    <section class="section">
         <h2>Licenses & Certifications</h2>
-        <ul>
-            <li><img src="assets/azure-devops-expert.png" alt="Azure DevOps Expert"> <strong>Microsoft Certified: DevOps Engineer Expert</strong>  - <a href="https://www.credly.com/badges/b3c83455-3aab-4262-ae62-3cf3a3ecf4c9/public_url">View Certificate</a> (July 2022) </li>
-            <li><img src="assets/azure-administrator.png" alt="Azure Administrator"> <strong>Microsoft Certified: Azure Administrator Associate</strong> - <a href="https://www.credly.com/badges/a2870a2f-3d7d-4a70-9618-cdc2eb1ce71c/public_url">View Certificate</a> (June 2022)</li>
-            <li><img src="assets/azure-fundamentals.png" alt="Azure Fundamentals"> <strong>Microsoft Certified: Azure Fundamentals</strong> - <a href="https://www.youracclaim.com/badges/bef429aa-200e-4f97-8890-d790085c1b4e/public_url">View Certificate</a> (February 2021) </li>
-            <li><img src="assets/stanforduniversity.PNG" alt="Stanford University"> <strong>Machine Learning</strong> - <a href="https://coursera.org/share/b12ed67a25f400ebe9ddffa34c88cdaa">View Certificate</a> (December 2020)</li>
-        </ul>
+        
+        <div class="certification">
+            <img src="assets/azure-devops-expert.png" alt="Microsoft Certified: DevOps Engineer Expert" width="50">
+            <strong>Microsoft Certified: DevOps Engineer Expert</strong> - July 2022
+        </div>
+        
+        <div class="certification">
+            <img src="assets/azure-administrator.png" alt="Microsoft Certified: Azure Administrator Associate" width="50">
+            <strong>Microsoft Certified: Azure Administrator Associate</strong> - June 2022
+        </div>
+        
+        <div class="certification">
+            <img src="assets/azure-fundamentals.png" alt="Microsoft Certified: Azure Fundamentals" width="50">
+            <strong>Microsoft Certified: Azure Fundamentals</strong> - February 2021
+        </div>
     </section>
 
-    <section>
+    <section class="section">
         <h2>Education</h2>
-        <ul>
-            <li><img src="assets/University.png" alt="University of Granada"> <strong>Bachelor’s Degree in Telecommunication Engineering</strong> (July 2020) - University of Granada, ETSIIT</li>
-            <li><img src="assets/edge-computing.png" alt="Edge Computing"> <strong>Edge Computing Bachelor's Degree Final Project</strong> (July 2020) - University of Granada, ETSIIT</li>
-        </ul>
+        
+        <h3>Bachelor's Degree in Telecommunication Engineering</h3>
+        <p><strong>University of Granada, ETSIIT</strong> - July 2020</p>
+        <img src="assets/University.png" alt="University of Granada Logo" width="100">
+
+        <h3>Edge Computing Bachelor's Degree Final Project</h3>
+        <p><strong>University of Granada, ETSIIT</strong></p>
+        <p>Maximum rating in degree's final project related to an Edge computing new design: Architecture and Edge computing logic.</p>
+        <img src="assets/edge-computing.png" alt="Edge Computing Project" width="100">
     </section>
 
-    <section>
+    <section class="section">
         <h2>Skills and Tools</h2>
-        <ul>
-            <li><img src="assets/Azure.png" alt="Azure"> Azure</li>
-            <li><img src="assets/k-logo.png" alt="Kubernetes"> Kubernetes</li>
-            <li><img src="assets/ADO.png" alt="Azure DevOps"> Azure DevOps</li>
-            <li><img src="assets/bash.png" alt="Bash"> BASH</li>
-            <li><img src="assets/python.png" alt="Python"> Python</li>
-            <li><img src="assets/docker.png" alt="Docker"> Docker</li>
-            <li><img src="assets/terraform.png" alt="Terraform"> Terraform / Terraform Cloud</li>
-            <li><img src="assets/helm.png" alt="Helm"> Helm</li>
-            <li><img src="assets/ansible.png" alt="Ansible"> Ansible</li>
-            <li><img src="assets/Jenkins.png" alt="Jenkins"> Jenkins</li>
-            <li><img src="assets/Spinnaker.png" alt="Spinnaker"> Spinnaker</li>
-            <li><img src="assets/networking.jpg" alt="Network Architecture"> Network Architecture</li>
-            <li><img src="assets/sql.png" alt="SQL"> SQL</li>
-            <li><img src="assets/cybersecurity.png" alt="Cyber Security"> Cyber Security</li>
-            <li><img src="assets/C.png" alt="C"> C</li>
-            <li><img src="assets/powershell.png" alt="Powershell"> Powershell</li>
-            <li><img src="assets/elasticsearch.png" alt="Elasticsearch"> Elasticsearch</li>
-            <li><img src="assets/kibana.png" alt="Kibana"> Kibana</li>
-            <li><img src="assets/kafka.png" alt="Kafka"> Kafka</li>
-            <li><img src="assets/apigee.png" alt="Apigee"> Apigee</li>
-            <li><img src="assets/aws.png" alt="AWS"> AWS</li>
-            <li><img src="assets/java.png" alt="Java"> Java</li>
-            <li><img src="assets/C#.png" alt="C#"> C#</li>
+        <ul class="skills-list">
+            <li><img src="assets/Azure.png" alt="Azure" width="20"> Azure</li>
+            <li><img src="assets/k-logo.png" alt="Kubernetes" width="20"> Kubernetes</li>
+            <li><img src="assets/bash.png" alt="Bash" width="20"> Bash</li>
+            <li><img src="assets/docker.png" alt="Docker" width="20"> Docker</li>
+            <li><img src="assets/terraform.png" alt="Terraform" width="20"> Terraform / Terraform Cloud</li>
+            <li><img src="assets/helm.png" alt="Helm" width="20"> Helm</li>
+            <li><img src="assets/ansible.png" alt="Ansible" width="20"> Ansible</li>
+            <li><img src="assets/Jenkins.png" alt="Jenkins" width="20"> Jenkins</li>
+            <li><img src="assets/Spinnaker.png" alt="Spinnaker" width="20"> Spinnaker</li>
+            <li><img src="assets/networking.jpg" alt="Network Architecture" width="20"> Network Architecture</li>
+            <li><img src="assets/sql.png" alt="SQL" width="20"> SQL</li>
+            <li><img src="assets/cybersecurity.png" alt="Cyber Security" width="20"> Cyber Security</li>
+            <li><img src="assets/C.png" alt="C" width="20"> C</li>
+            <li><img src="assets/powershell.png" alt="Powershell" width="20"> Powershell</li>
+            <li><img src="assets/elasticsearch.png" alt="Elasticsearch" width="20"> Elasticsearch</li>
+            <li><img src="assets/kibana.png" alt="Kibana" width="20"> Kibana</li>
+            <li><img src="assets/kafka.png" alt="Kafka" width="20"> Kafka</li>
+            <li><img src="assets/apigee.png" alt="Apigee" width="20"> Apigee</li>
+            <li><img src="assets/aws.png" alt="AWS" width="20"> AWS</li>
+            <li><img src="assets/java.png" alt="Java" width="20"> Java</li>
+            <li><img src="assets/C#.png" alt="C#" width="20"> C#</li>
         </ul>
     </section>
 
-    <section>
+    <section class="section">
         <h2>Languages</h2>
-        <ul>
-            <li><img src="assets/es.png" alt="Spanish"> Spanish - Native Speaker</li>
-            <li><img src="assets/gb.png" alt="English"> English - Professional User</li>
-        </ul>
+        <p>Professional user</p>
+        <p>Native speaker</p>
     </section>
 
-    <section class="about-me">
+    <section class="section">
         <h2>About Me</h2>
         <p>I am passionate about new technologies, software architecture, and design implementations. I love problem-solving, discovering, and constantly learning new things. My main goal is to always keep learning and growing both professionally and personally.</p>
     </section>
