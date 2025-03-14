@@ -4,61 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jose Manuel Lopez del Rio - CV</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
     <style>
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             background: url('assets/website-background.png') no-repeat center center fixed;
             background-size: cover;
+            color: white;
         }
-        .cv-container {
-            width: 80%;
-            height: 90vh;
-            background: rgba(255, 255, 255, 0.85); /* Slight transparency */
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
             padding: 20px;
-            border-radius: 15px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
-        canvas {
-            width: 100%;
-            height: auto;
+        h1, h2 {
+            text-align: center;
+        }
+        a {
+            color: #4CA1AF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        ul {
+            padding-left: 20px;
         }
     </style>
 </head>
 <body>
-
-    <div class="cv-container">
-        <canvas id="pdf-canvas"></canvas>
+    <div class="container">
+        <h1>Jose Manuel Lopez del Rio</h1>
+        <p>Email: <a href="mailto:josemanuelori@gmail.com">josemanuelori@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/jose-manuel-lopez-del-rio-87059819b/" target="_blank">View Profile</a></p>
+        
+        <div class="section">
+            <h2>Work Experience</h2>
+            <ul>
+                <li><strong>Zurich Insurance</strong> - Senior Cloud DevOps/Platform Engineer (May 2023 - Present)</li>
+                <li><strong>UST</strong> - DevOps and Infrastructure Specialist (April 2021 - May 2023)</li>
+                <li><strong>Unit4</strong> - Cloud Engineer (October 2020 - April 2021)</li>
+                <li><strong>Wazuh</strong> - IT Security Engineer (June 2019 - October 2020)</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Microsoft Certified: DevOps Engineer Expert - <a href="https://www.credly.com/badges/b3c83455-3aab-4262-ae62-3cf3a3ecf4c9/public_url" target="_blank">View Certificate</a></li>
+                <li>Microsoft Certified: Azure Administrator Associate - <a href="https://www.credly.com/badges/a2870a2f-3d7d-4a70-9618-cdc2eb1ce71c/public_url" target="_blank">View Certificate</a></li>
+                <li>Machine Learning - Stanford University - <a href="https://coursera.org/share/b12ed67a25f400ebe9ddffa34c88cdaa" target="_blank">View Certificate</a></li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Education</h2>
+            <p>Bachelor’s Degree in Telecommunication Engineering - University of Granada (2020)</p>
+            <p>Edge Computing Final Project - Maximum rating</p>
+        </div>
+        
+        <div class="section">
+            <h2>Skills & Tools</h2>
+            <p>Azure, Kubernetes, DevOps, Terraform, Docker, Python, SQL, Cyber Security, Java, C#</p>
+        </div>
+        
+        <div class="section">
+            <h2>About Me</h2>
+            <p>I am passionate about new technologies, software architecture, and design implementations. I love problem-solving, discovering, and constantly learning new things.</p>
+        </div>
     </div>
-
-    <script>
-        const url = 'CV-JoseManuelLopezDelRio.pdf';
-
-        pdfjsLib.getDocument(url).promise.then(pdf => {
-            pdf.getPage(1).then(page => {
-                const canvas = document.getElementById('pdf-canvas');
-                const context = canvas.getContext('2d');
-                const viewport = page.getViewport({ scale: 1.5 });
-
-                canvas.width = viewport.width;
-                canvas.height = viewport.height;
-
-                page.render({
-                    canvasContext: context,
-                    viewport: viewport
-                });
-            });
-        });
-    </script>
-
 </body>
 </html>
