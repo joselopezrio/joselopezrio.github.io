@@ -13,15 +13,40 @@
             padding: 20px;
             text-align: left;
         }
-        h1, h2, h3 {
-            color: #333;
+        h1 {
+            color: #2c3e50; /* Dark blue for the name */
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #3498db; /* Blue for section titles */
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #34495e; /* Dark gray for subsection titles */
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .header-info {
+            flex-grow: 1;
+        }
+        .header-info p {
+            margin: 0;
+            text-align: right;
+            color: #7f8c8d; /* Gray for email and LinkedIn */
         }
         .section {
             margin-bottom: 30px;
-        }
-        .section h2 {
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
         }
         .skills-list {
             list-style-type: none;
@@ -65,9 +90,14 @@
 </head>
 <body>
     <header>
-        <h1>Jose Manuel Lopez del Rio</h1>
-        <p>Email: <a href="mailto:josemanuelori@gmail.com">josemanuelori@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/josemanuellopezdelrio">View profile</a></p>
+        <div class="header">
+            <img src="assets/Fotoperfil.jpg" alt="Profile Picture">
+            <div class="header-info">
+                <h1>Jose Manuel Lopez del Rio</h1>
+                <p>Email: <a href="mailto:josemanuelori@gmail.com">josemanuelori@gmail.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/josemanuellopezdelrio">View profile</a></p>
+            </div>
+        </div>
     </header>
 
     <section class="section">
@@ -167,7 +197,9 @@
         <ul class="skills-list">
             <li><img src="assets/Azure.png" alt="Azure" width="20"> Azure</li>
             <li><img src="assets/k-logo.png" alt="Kubernetes" width="20"> Kubernetes</li>
+            <li><img src="assets/Azure.png" alt="Azure DevOps" width="20"> Azure DevOps</li>
             <li><img src="assets/bash.png" alt="Bash" width="20"> Bash</li>
+            <li><img src="assets/python.png" alt="Python" width="20"> Python</li>
             <li><img src="assets/docker.png" alt="Docker" width="20"> Docker</li>
             <li><img src="assets/terraform.png" alt="Terraform" width="20"> Terraform / Terraform Cloud</li>
             <li><img src="assets/helm.png" alt="Helm" width="20"> Helm</li>
